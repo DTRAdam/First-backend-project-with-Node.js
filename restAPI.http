@@ -1,0 +1,75 @@
+@dev = http://localhost:8000
+@prod = http://localhost:8008
+
+
+# Users Development
+### GET all users
+GET {{dev}}/users
+
+### POST create user
+POST {{dev}}/users
+Content-Type: application/json
+
+### PATCH update user
+PATCH {{dev}}/users
+Content-Type: application/json
+
+### PUT replace user 
+PUT {{dev}}/users
+Content-Type: application/json
+
+#  Cards Development
+### GET all cards
+GET {{dev}}/cards
+
+### POST create card
+POST {{dev}}/cards
+Content-Type: application/json
+
+### PATCH update card
+PATCH {{dev}}/cards
+Content-Type: application/json
+
+
+### PUT replace card
+PUT {{dev}}/cards
+Content-Type: application/json
+
+
+# Users Production
+### GET all users
+GET {{prod}}/users
+
+### POST create user
+POST {{prod}}/users
+Content-Type: application/json
+
+
+### PATCH update user
+PATCH {{prod}}/users
+Content-Type: application/json
+
+
+### PUT replace user
+PUT {{prod}}/users
+Content-Type: application/json
+
+
+
+# Cards Production
+### GET all cards
+GET {{prod}}/cards
+
+### POST create card
+POST {{prod}}/cards
+Content-Type: application/json
+
+
+### PATCH update card
+PATCH {{prod}}/cards
+Content-Type: application/json
+
+### PUT replace card
+PUT {{prod}}/cards
+Content-Type: application/json
+
