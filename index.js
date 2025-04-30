@@ -31,7 +31,7 @@ app.use((req, res, next) => {
     next()
 })
 app.use("/api/users", users)
-// app.use("/cards")
+app.use("/cards")
 app.listen(port, () => console.log(chalk.green(`Server started on ${port}`)))
 
 
