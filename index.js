@@ -3,6 +3,7 @@ const express = require("express")
 const users = require("./routes/users")
 const app = express()
 const chalk = require("chalk")
+const cards = require("./models/Cards")
 const cors = require("cors")
 const morgan = require("morgan");
 const fs = require("fs");
@@ -31,7 +32,7 @@ app.use((req, res, next) => {
     next()
 })
 app.use("/api/users", users)
-app.use("/cards")
+app.use("/cards", cards)
 app.listen(port, () => console.log(chalk.green(`Server started on ${port}`)))
 
 
